@@ -22,7 +22,7 @@ else:
 # mentions bro
 mention_list = mentions.get()
 
-if(len(mentions) > 0):
+if(len(mention_list) > 0):
 	mentions.reply(mention_list)
 
 else:

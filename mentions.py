@@ -27,9 +27,8 @@ def get():
     return mention_tweets
 
 def reply(tweets):
-    for tweet in mention_tweets:
+    for tweet in tweets:
         try:
-            print("tweeting")
-            # api.update_with_media(wrong[0], tweet_string, in_reply_to_status_id = mention_id)
+            api.update_with_media(wrong[0], tweet_string, in_reply_to_status_id = mention_id)
         except IndexError as e:
             log.log(e)
