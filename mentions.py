@@ -4,6 +4,7 @@ import re
 from credentials import *
 import glob
 import tweet_cache
+import log
 
 auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
 auth.set_access_token(ACCESS_TOKEN, ACCESS_SECRET)
