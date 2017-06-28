@@ -1,6 +1,7 @@
 import tweepy, time
 from credentials import *
 import glob
+import log
 
 def send(tweets):
 	auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
